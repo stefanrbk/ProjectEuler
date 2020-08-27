@@ -14,7 +14,19 @@ namespace EulerCSharp
     {
         public string Run()
         {
-            return "";
+            var fib = new Fibonacci(1, 2);
+            var value = 0L;
+
+            foreach(var nextFib in fib)
+            {
+                if (nextFib >= 4_000_000)
+                    break;
+
+                if (nextFib % 2 == 0)
+                    value += nextFib;
+            }
+
+            return value.ToString();
         }
     }
 }
