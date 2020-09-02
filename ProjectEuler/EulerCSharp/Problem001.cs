@@ -9,7 +9,7 @@ namespace CSharp.Euler001
         "Find the sum of all the multiples of 3 or 5 below 1000.")]
     public class Problem001 : IEulerProblem
     {
-        public string Run()
+        public string RunSolution()
         {
             var value = 0;
             for (var i = 1; i < 1000; i++)

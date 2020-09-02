@@ -6,6 +6,6 @@ namespace ProjectTemplates
 {
     public interface IEulerProblem
     {
-        public string Run();
+        public string RunSolution();
     }
 }

@@ -12,7 +12,7 @@ namespace EulerCSharp
         "By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even - valued terms.")]
     public class Problem002 : IEulerProblem
     {
-        public string Run()
+        public string RunSolution()
         {
             var fib = new Fibonacci(1, 2);
             var value = 0L;

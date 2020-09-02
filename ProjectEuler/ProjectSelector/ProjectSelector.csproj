@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EulerCSharp\EulerCSharp.csproj" />
+    <ProjectReference Include="..\ProjectTemplates\ProjectTemplates.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,27 +8,24 @@ using System.Text;
 
 namespace EulerCSharp
 {
-    [LanguageDescriptor(Language.CSharp)]
+    [LanguageDescriptor(Language.CSharp, "C#")]
     public static class CSharpLanguage
     {
         public static Action InitEntryPoint { get; } = Init;
-        public static string Name => 
-            "C#";
-        public static List<(EulerProblemAttribute Problem, Func<string> EntryPoint)> Problems { get; } = 
-            new List<(EulerProblemAttribute, Func<string>)>();
-
-        private static List<IEulerProblem> problemInstances = new List<IEulerProblem>();
+        public static List<Problem> Problems { get; } = new List<Problem>();
 
         static void Init()
         {
             var asm = Assembly.GetExecutingAssembly();
             var types = asm.ExportedTypes;
-            foreach (var type in types
-                .Where(a => !(a.GetCustomAttribute<EulerProblemAttribute>() is null)))
+            foreach (var type in types)
             {
-                var instance = (IEulerProblem)asm.CreateInstance(type.FullName);
-                problemInstances.Add(instance);
-                Problems.Add((type.GetCustomAttribute<EulerProblemAttribute>(), instance.Run));
+                var attr = type.GetCustomAttribute<EulerProblemAttribute>();
+                if (!(attr is null))
+                {
+                    var prob = (IEulerProblem)asm.CreateInstance(type.FullName);
+                    Problems.Add(new Problem(prob, "RunSolution"));
+                }
             }
         }
     }
