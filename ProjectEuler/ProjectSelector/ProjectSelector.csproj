@@ -5,7 +5,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <ProjectReference Include="..\EulerCSharp\EulerCSharp.csproj" />
     <ProjectReference Include="..\ProjectTemplates\ProjectTemplates.csproj" />

@@ -1,17 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>EulerCSharp</RootNamespace>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <ProjectReference Include="..\ProjectTemplates\ProjectTemplates.csproj" />
   </ItemGroup>
-
+  
 </Project>

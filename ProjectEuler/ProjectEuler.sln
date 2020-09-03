@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectSelector", "ProjectSelector\ProjectSelector.csproj", "{B15A2670-DB2A-4474-9CF8-474EF0A2C91B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectSelector", "ProjectSelector\ProjectSelector.csproj", "{B15A2670-DB2A-4474-9CF8-474EF0A2C91B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectTemplates", "ProjectTemplates\ProjectTemplates.csproj", "{2DD5CA06-FA1C-4979-A4E4-1A5F052F9FB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplates", "ProjectTemplates\ProjectTemplates.csproj", "{2DD5CA06-FA1C-4979-A4E4-1A5F052F9FB4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EulerCSharp", "EulerCSharp\EulerCSharp.csproj", "{4B32A9D1-5E38-462F-97DD-EA3EFAFB6930}"
 EndProject
